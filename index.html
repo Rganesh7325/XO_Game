@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XO Gameeses</title>
+    <link rel="stylesheet" href="./xo.css">
+</head>
+<body>
+    
+     
+    <div class="title">
+       <h1>TIC TAC TOE</h1>
+    </div>
+     <div class="tcss" >
+        <h1 id="t">X-TURN</h1>
+     </div>
+    <div class="sc">
+    <div class="score">
+        <h1 class="xs">X-Score : <span id="xs">0</span></h1>
+        <h1 class="os">O-Score : <span id="os">0</span></h1>
+      </div>
+      </div>
+        <div class="childcss" id="child">
+       <div class="d1css"  id="d1">
+      
+        <div class="d11css" id="d11" onclick="ch1(this)"></div>
+        <div class="d12css" id="d12" onclick="ch1(this)"></div>
+        <div  class="d13css" id="d13" onclick="ch1(this)"></div>
+       </div>
+       
+
+        <div class="d2css"  id="d2">
+        <div class="d21css"  id="d21" onclick="ch1(this)"></div>
+        <div class="d22css"  id="d22" onclick="ch1(this)"></div>
+        <div class="d23css"  id="d23" onclick="ch1(this)"></div>
+       </div>
+
+        <div class="d3css"  id="d3">
+        <div class="d31css" id="d31" onclick="ch1(this)"></div>
+        <div class="d32css" id="d32" onclick="ch1(this)"></div>
+        <div class="d33css" id="d33" onclick="ch1(this)"></div>
+       </div>
+    
+       </div>
+       <div class="endparent">
+       <div class="endchild">
+          <button  onclick="resetbtn()" class="btn"  >Restart Game&#x21BB;</button>
+        <div class="wcss"><h1 id="f">RESULT</h1></div>          
+      <button class="btn" onclick="resetscore()"> Reset Score</button>
+   </div>
+   </div>
+    <script src="./xo.js"></script>
+</body>
+</html>
